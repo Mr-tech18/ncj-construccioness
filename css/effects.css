@@ -1,0 +1,15 @@
+#effects {
+  background-image: linear-gradient(to right, #ff69b4,#ffe6cc,#8bc34c,#03a9fc);
+  -webkit-background-clip: text;
+  background-size: 300% 100%;
+  
+  background-position: 0% 0%;
+  animation: gradient-animation 10s linear infinite;
+  color: transparent;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 0%;
+   }
+  100% { background-position: -200% 0%; }
+}

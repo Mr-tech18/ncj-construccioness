@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    *{
+        scroll-behavior: smooth;
+    }
+    .effects {
+        background-image: linear-gradient(to right, #8d717f,#ffe6cc,#8bc34c,#03fc9d);
+        -webkit-background-clip: text;
+        background-size: 300% 100%;
+        background-position: 0% 0%;
+        font-weight:bolder;
+        animation: gradient-animation 100s linear infinite;
+        color: transparent;
+      }
+      
+      @keyframes gradient-animation {
+        0% { background-position: 0% 25%;
+         }
+         50%{
+            background-position: 100% 50%; 
+         }
+        100% { background-position: -200% 100%; }
+      }
+
+      #btn-email{
+        animation: translation 10s ease infinite;
+        position: relative;
+      }
+
+      @keyframes translation{
+        0%{
+            transform: scale(1) ;
+        }
+        50%{
+            transform: scale(1.2);
+        }
+       
+      }
+
+      .underliner{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        color:rgb(36, 34, 34);
+        transition: all 0.15ms ease-in-out;
+      }
+}
