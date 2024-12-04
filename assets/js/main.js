@@ -117,4 +117,29 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     )();
     
+
+    //actions based on scrolling
+    (
+       ()=>{
+        const entInfo=document.getElementById('ent-info');
+        const MENU_BAR=document.querySelectorAll('[data-menu="items"]');
+        console.log(MENU_BAR.length);
+            window.addEventListener('scroll',()=>{
+                if(window.scrollY>1000){
+                    MENU_BAR.forEach(item=>{
+                        item.classList.add('hidden');
+                        
+                    });
+                    entInfo.classList.remove('hidden');
+                    
+                }else{
+                    MENU_BAR.forEach(item=>{
+                        item.classList.remove('hidden');
+                        
+                    });
+                    entInfo.classList.add('hidden');
+                }
+            });
+       }
+    )();
 });

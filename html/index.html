@@ -13,7 +13,7 @@
     <header  class="p-1 fixed shadow-md  z-50 w-full bg-yellow-50">
         <section>
             <!-- this div is disgn only mobile devices -->
-            <div class="flex justify-between xl:hidden px-4 py-4">
+            <div data-menu="items" class="flex justify-between xl:hidden px-4 py-4">
                 <div class="w-10 h-10">
                     <img class="w-full h-full object-fit object-center" src="../assets/small_images/lo (Copy).png" alt="">
                 </div>
@@ -21,7 +21,7 @@
                     <img id="show-menu-btn" class="h-6 w-auto" src="../assets/images/menu.png" alt="">
                 </div>
             </div>
-            <nav class="xl:flex items-center justify-between  px-5">
+            <nav  data-menu="items" class="xl:flex items-center justify-between  px-5">
                 <!-- this div is the logo just for the large screen -->
                 <div  class="hidden xl:block">
                     <img class="h-16 w-16" src="../assets/small_images/lo (Copy).png" alt="">
@@ -39,20 +39,25 @@
                 
             </nav>
         </section>
-        <section class="text-center hidden">
-            <h1>
-                ncj construcciones
-            </h1>
-            <ul class="capitalize">
-                <div class="flex gap-3 justify-center">
-                    <li>etude</li>
-                    <li>conception</li>
-                    <li>realisation</li>
-                </div>
-                <p>Des projets de Génie livile</p>
-            </ul>
-            <p>Tel: <a href="https://wa.me/+237656502145">00237 656 502 145</a> - 0027 650 166 194</p>
-            <p>Email:<a href="mailto:Cyrillejoelnkagoum2@gmail.com">Cyrillejoelnkagoum2@gmail.com</a></p>
+        <section id="ent-info" class="text-center items-center flex-row-reverse text-xs lg:text-[1rem] flex justify-evenly font-semibold">
+           <div class="space-y-1">
+            <h1 class="uppercase font-bold  lg:text-2xl">
+                    ncj construcciones
+                </h1>
+                <ul class="capitalize">
+                    <div class="flex gap-3 justify-center">
+                        <li>etude</li>
+                        <li>conception</li>
+                        <li>realisation</li>
+                    </div>
+                    <p class="text-yellow-950 font-bold scale-110">Des projets du Génie civil</p>
+                </ul>
+                <p>Tel: <a href="https://wa.me/+237656502145">00237 656 502 145</a> - 0027 650 166 194</p>
+                <p>Email:<a href="mailto:Cyrillejoelnkagoum2@gmail.com">Cyrillejoelnkagoum2@gmail.com</a></p>
+           </div>
+           <div class="lg:h-40 h-20 w-auto">
+                <img class="h-full w-full object-cover object-center" src="../assets/small_images/lo (Copy).png" alt="">
+           </div>
         </section>
         <!-- this section is for the presentation of the entreprise -->
         
